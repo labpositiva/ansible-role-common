@@ -13,7 +13,7 @@ addons:
 
 install:
   # Install dependences
-  - make install
+  - make install env=test
   # Check ansible version
   - ansible --version
   # Create ansible.cfg with correct roles_path
