@@ -31,12 +31,12 @@
     -   id: double-quote-string-fixer
     -   id: check-docstring-first
     -   id: debug-statements
-    -   id: detect-aws-credentials
+    # -   id: detect-aws-credentials
     -   id: requirements-txt-fixer
     -   id: name-tests-test
     -   id: file-contents-sorter
     -   id: fix-encoding-pragma
-    -   id: no-commit-to-branch
+    # -   id: no-commit-to-branch
     -   id: sort-simple-yaml
     -   id: flake8
         files: ^src/.*\.py$
