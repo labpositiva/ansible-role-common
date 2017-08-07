@@ -31,12 +31,12 @@
     -   id: double-quote-string-fixer
     -   id: check-docstring-first
     -   id: debug-statements
-    -   id: detect-aws-credentials
+    # -   id: detect-aws-credentials
     -   id: requirements-txt-fixer
     -   id: name-tests-test
     -   id: file-contents-sorter
     -   id: fix-encoding-pragma
-    -   id: no-commit-to-branch
+    # -   id: no-commit-to-branch
     -   id: sort-simple-yaml
     -   id: flake8
         files: ^src/.*\.py$
@@ -56,7 +56,7 @@
         - --disable=no-name-in-module,import-error
         - --ignore=settings_test, migrations
 -   repo: https://github.com/pre-commit/pre-commit.git
-    sha: v0.15.4
+    sha: v0.16.2
     hooks:
     -   id: validate_config
     -   id: validate_manifest
@@ -67,7 +67,7 @@
         args:
         - --silent-overwrite
 -   repo: https://github.com/detailyang/pre-commit-shell.git
-    sha: 1.0.1
+    sha: 1.0.2
     hooks:
     -   id: shell-lint
         exclude: ^script/wait-for-it.sh$
@@ -81,9 +81,3 @@
     sha: v1.1.0
     hooks:
     -   id: python-safety-dependencies-check
--   repo: https://github.com/Lucas-C/pre-commit-hooks-bandit
-    sha: v1.0.3
-    hooks:
-    -   id: python-bandit-vulnerability-check
-        args: []
-        files: .py$
